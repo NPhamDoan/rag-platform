@@ -1,0 +1,6 @@
+{
+  /* Build config: same as tsconfig.json but excludes test files so `dist/`
+     ships only the library, not the vitest/fast-check specs. */
+  "extends": "./tsconfig.json",
+  "exclude": ["dist", "node_modules", "**/*.test.ts"]
+}
