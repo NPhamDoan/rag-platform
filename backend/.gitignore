@@ -1,0 +1,13 @@
+# Bi mat / cau hinh cuc bo
+.env
+
+# Du lieu runtime
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/

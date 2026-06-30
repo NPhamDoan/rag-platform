@@ -1,0 +1,30 @@
+# Web framework
+fastapi>=0.115,<1.0
+python-multipart>=0.0.9   # upload tai lieu multipart/form-data (UploadFile)
+uvicorn[standard]>=0.30,<1.0
+
+# Cau hinh
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3,<3.0
+
+# Co so du lieu
+SQLAlchemy>=2.0,<3.0
+
+# Parse tai lieu (trich xuat van ban PDF) — R5.4
+PyMuPDF>=1.24
+
+# Vector store (1 collection / KhongGianTaiLieu) — R21
+chromadb>=0.5
+
+# Embedding e5-large local (intfloat/multilingual-e5-large, ~2GB) — R21
+# Nap lazy luc embed(); moi truong khong cai van import-safe (dung fake trong test).
+sentence-transformers>=2.7
+
+# Xac thuc / bao mat
+bcrypt>=4.1,<5.0
+cryptography>=42.0
+
+# Test
+pytest>=8.0
+hypothesis>=6.100
+httpx>=0.27          # TestClient cho FastAPI
